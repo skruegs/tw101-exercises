@@ -23,7 +23,7 @@ public class Node {
                 left.add(nameOfNewNode);
             }
         }
-        else {
+        else if (name.compareTo(nameOfNewNode) < 0) {
             if (right == null) {
                 right = new Node(nameOfNewNode);
             }

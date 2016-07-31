@@ -7,5 +7,12 @@ package com.thoughtworks.tw101.exercises.exercise8;
 public class Main {
     public static void main(String[] args) {
 
+        GameView view = new GameView();
+        GameModel model = new GameModel();
+        GameController controller = new GameController(view, model);
+
+        // System.out.println(model.getNumber());
+        controller.start();
+
     }
 }
